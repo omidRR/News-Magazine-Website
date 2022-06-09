@@ -1,0 +1,79 @@
+﻿body {
+    font-family: 'Vazirmatn-Regular';
+}
+
+@font-face {
+    font-family: 'Vazirmatn-Regular';
+    src: url('../Fonts/Vazirmatn-Regular.ttf') format('truetype');
+}
+.footer {
+    grid-area: footer;
+    display: block;
+    grid-template-areas: 'f-section1 f-section2 f-section3';
+    grid-template-columns: 33% 33% 34%;
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+    transition: 1s;
+    background-color: midnightblue;
+ 
+    color: white;
+}
+footer:hover {
+    color: white;
+    background-color: #02022e;
+    transition: 1s;
+}
+
+.footer .section {
+    text-align: right;
+}
+
+.footer .section ul {
+    list-style-type: disc;
+    padding-inline-start: 15%;
+}
+
+
+.footer .section:nth-child(1) {
+    grid-area: f-section1;
+}
+
+.footer .section:nth-child(2) {
+    grid-area: f-section2;
+}
+
+.footer .section:nth-child(3) {
+    grid-area: f-section3;
+}
+
+
+.footer .section p {
+    text-align: right;
+    padding: 5px 9%;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer .section li {
+    margin: 8px 0px;
+    text-decoration: none;
+}
+
+    .footer .section li a {
+        font-size: 12px;
+        font-weight: 500;
+        text-decoration: none;
+        color: white;
+        position: absolute;
+        transition: 0.3s;
+    }
+    .footer .section .item:hover {
+        text-align: center;
+        border-radius: 3px;
+        font-size: 16px;
+        background-color: #008000;
+        border: none;
+        color: white;
+        transition: 0.3s;
+    }

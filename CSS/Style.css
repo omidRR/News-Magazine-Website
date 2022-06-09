@@ -1,0 +1,187 @@
+﻿body {
+    align-items: center;
+    align-content: center;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Vazirmatn-Regular';
+}
+@font-face {
+    font-family: 'Vazirmatn-Regular';
+    src: url('Fonts/Vazirmatn-Regular.ttf') format('truetype');
+}
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: coral;
+  
+}
+.contentname {
+ 
+    background-color: darkgrey;
+    text-align: center;
+}
+
+div {
+    /* border: 1px solid black; */
+    display: block;
+    /*border: 1px solid red;*/
+    background-color: #eee;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: rgba(134, 0, 1, 255);
+    padding: 10px 5%;
+}
+
+    .header .icon { height: 150px; }
+.timecl {
+    float: left;
+    margin: auto auto auto -60px;
+    text-align: left;
+    transition: 1s;
+}
+    .timecl:hover {
+        color: rgb(69, 12, 239);
+        background-color: #000746;
+        border: none;
+        color: white;
+        border-radius: 10px;
+        font-size: 20px;
+        transition: 1s;
+    }
+.menu {
+    padding: 7px 5%;
+    box-sizing: border-box;
+    background-color: #000746;
+}
+    .menu:hover {
+        color: blue;
+        background-color: blue;
+        border: none;
+        color: blue;
+        transition: 1s;
+    }
+    .menu .menu-item:hover {
+        color: rgb(69, 12, 239);
+        background-color: #000746;
+        border: none;
+        color: white;
+        padding: 7px 30px;
+        text-align: center;
+        margin: 4px 2px;
+
+        transition: 1s;
+    }
+    .menu .menu-item {
+        margin: 2px 2px 2px 2px;
+        min-width: 88px;
+        font-size: 17px;
+        padding: 2px 20px;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        /*mt*/
+        position: relative;
+        overflow: hidden;
+        border-width: 0;
+        outline: none;
+        border-radius: 3px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+        background-color: #f20b41;
+        color: #ecf0f1;
+        transition: 1s;
+    }
+
+        .menu .menu-item:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            display: block;
+            width: 0;
+            padding-top: 0;
+            border-radius: 100%;
+            background-color: rgba(236, 240, 241, .3);
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .menu .menu-item:active:before {
+            width: 90%;
+            padding-top: 90%;
+            transition: width .5s ease-out, padding-top .5s ease-out;
+        }
+
+
+.copyright {
+    text-align: center;
+    font-size: x-small;
+    color: rgb(69, 12, 239);
+    background-color: brown;
+    border: none;
+    height: 40px;
+    margin: -15px 0px 0px 0px;
+    color: white;
+    transition: 1s;
+}
+    .copyright:hover {
+        text-align: center;
+        font-size: x-small;
+        color: rgb(69, 12, 239);
+        background-color: #000746;
+        border: none;
+        height: 40px;
+        margin: -15px 0px 0px 0px;
+        color: white;
+        transition: 1s;
+    }
+
+.main-news {
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    padding: 30px;
+}
+
+    .main-news .img-response {
+        width: 20%;
+        height: 20%;
+        border-radius: 20px;
+    }
+.title-news- {
+    font-size: 20px;
+    color: rgb(69, 12, 239);
+    background-color: #000746;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 7px 30px;
+    text-align: center;
+    margin: 4px 2px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+    .title-news-:hover {
+        color: rgb(69, 12, 239);
+        background-color: #f20b41;
+        border: none;
+        color: white;
+        border-radius: 10px;
+        padding: 7px 30px;
+        text-align: center;
+        margin: 4px 2px;
+        transition: 0.5s;
+    }
+
+.main-news .text-box-news- div { margin: 15px; }
+
+
+
+
+

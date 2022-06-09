@@ -1,0 +1,174 @@
+﻿body {
+    font-family: 'Vazirmatn-Regular';
+}
+
+@font-face {
+    font-family: 'Vazirmatn-Regular';
+    src: url('../Fonts/Vazirmatn-Regular.ttf') format('truetype');
+}
+
+
+
+.imageSignin2 {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0, 0.4);
+    height: 500px;
+}
+
+.SigninItem2 {
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+
+
+#itemmmm2 div {
+    background-color: #060e2647;
+}
+
+.imageSigninsettings2 {
+    /*  filter: blur(1px);
+    -webkit-filter: blur(1px);*/
+    background-color: purple;
+    transition: 3s;
+}
+/*.imagesignupsettings:hover {
+        background-color: #02022e;
+        transition: 3s;
+    }*/
+
+
+
+
+.Signin-Control2 {
+    margin-bottom: 0.5rem;
+    border-radius: 11px;
+    width: 40%;
+    padding: .375rem .75rem;
+    background-color: #fff;
+    background-clip: padding-box;
+    text-align: center;
+}
+
+    .Signin-Control2:focus {
+        color: #000000;
+        background-color: #ffffff;
+        border: 3px solid #da5767;
+        outline: 0;
+        box-shadow: none;
+    }
+
+.btn-LoginAccount2 {
+    padding: 0.5rem 5.6rem;
+    background: #100c38c7;
+    color: snow;
+    border-radius: 10px;
+    border: 2px solid aliceblue;
+    transition: 1s;
+}
+
+    .btn-LoginAccount2:hover {
+        background-color: red;
+        border-color: #df8c96;
+        transition: 1s;
+    }
+
+.btn-CreateAccountinlogin2 {
+    padding: 0.3rem 1rem;
+    background: #100c38c7;
+    color: snow;
+    border-radius: 10px;
+    margin: 0px 0px 5px;
+    border: 2px solid aliceblue;
+    transition: 1s;
+}
+
+    .btn-CreateAccountinlogin2:hover {
+        background-color: red;
+        border-color: #df8c96;
+        transition: 1s;
+    }
+
+.forgetpassword-a2 {
+    color: #ffffffd6;
+    text-decoration: none;
+}
+
+.imageSigninsettings2 {
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+    -webkit-animation: rainbow 18s ease infinite;
+    -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@-moz-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@-o-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
