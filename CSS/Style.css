@@ -13,12 +13,11 @@
     display: grid;
     grid-template-columns: auto;
     background-color: coral;
-  
 }
 .contentname {
- 
-    background-color: darkgrey;
+    background-color: #192531;
     text-align: center;
+    color: white;
 }
 
 div {
@@ -60,6 +59,7 @@ div {
         background-color: blue;
         border: none;
         color: blue;
+        overflow: hidden;
         transition: 1s;
     }
     .menu .menu-item:hover {
@@ -105,16 +105,12 @@ div {
             padding-top: 0;
             border-radius: 100%;
             background-color: rgba(236, 240, 241, .3);
-            -webkit-transform: translate(-50%, -50%);
-            -moz-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            -o-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
         }
 
         .menu .menu-item:active:before {
-            width: 90%;
-            padding-top: 90%;
+            width: 104%;
+            padding-top: 104%;
             transition: width .5s ease-out, padding-top .5s ease-out;
         }
 .main-newscolor div { margin: 0px 0px 10px; }

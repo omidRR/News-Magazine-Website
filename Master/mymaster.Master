@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../CSS/Footer.css" />
     <link rel="stylesheet" type="text/css" href="../CSS/Signup.css" />
     <link rel="stylesheet" type="text/css" href="../CSS/Signin.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/About.css" />
     <script src="../Scripts/sweetalert.min.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
