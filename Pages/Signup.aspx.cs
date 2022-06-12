@@ -15,9 +15,6 @@ namespace News_Magazine_Website.Pages
           
         }
 
-
-    
-
         protected void btnCreataccID_OnServerClick(object sender, EventArgs e)
         { if (nameID.Value==""||emailID.Value==""||passwordID.Value==""||confirm_passwordID.Value=="")
             {
