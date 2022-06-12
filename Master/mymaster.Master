@@ -33,7 +33,7 @@
                     <a href="/Pages/Signup.aspx" class="menu-item">ثبت نام</a>
                     <a href="#" class="menu-item">سوالات متداول</a>
                     <a href="#" class="menu-item">تماس با ما</a>
-                    <a href="#" class="menu-item">درباره ما</a>
+                    <a href="/Pages/About.aspx" class="menu-item">درباره ما</a>
                     <time class="timecl" style="color: white;"><%:DateTime.Now.ToString("f") %></time>
                 </div>
             </div>
@@ -67,7 +67,7 @@
                         <ul>
                             <li><a href="#" class="item">پشتیبانی</a></li>
                             <li><a href="#" class="item">پرسش های متداول</a></li>
-                            <li><a href="#" class="item">درباره ما</a></li>
+                            <li><a href="/Pages/About.aspx" class="item">درباره ما</a></li>
 
                         </ul>
                     </section>
