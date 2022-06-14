@@ -68,6 +68,7 @@
     <Content Include="CSS\Footer.css" />
     <Content Include="CSS\Signin.css" />
     <Content Include="CSS\Signup.css" />
+    <Content Include="default.aspx" />
     <Content Include="Images\icon.jpg" />
     <Content Include="CSS\Style.css" />
     <Content Include="Images\ui-fixed.png" />
@@ -79,6 +80,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Master\mymaster.Master.cs">
       <DependentUpon>mymaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
