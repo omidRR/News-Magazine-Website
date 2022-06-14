@@ -1,4 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="mymaster.master.cs" Inherits="News_Magazine_Website.mymaster" %>
+<%@ Import Namespace="System.Globalization" %>
 
 <!DOCTYPE html>
 
@@ -34,7 +35,7 @@
                     <a href="#" class="menu-item">سوالات متداول</a>
                     <a href="#" class="menu-item">تماس با ما</a>
                     <a href="../Pages/About.aspx" class="menu-item">درباره ما</a>
-                    <time class="timecl" style="color: white;"><%:DateTime.Now.ToString("f") %></time>
+                    <time class="timecl" style="color: white;"><%:DateTime.Now.ToString("f",new CultureInfo("fa-IR")) %></time>
                 </div>
             </div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
