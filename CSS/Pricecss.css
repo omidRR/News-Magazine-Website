@@ -10,6 +10,12 @@ body {
     font-family: 'Vazirmatn-Regular';
     src: url('../Fonts/Vazirmatn-Regular.ttf') format('truetype');
 }
+.contentnameprice {
+    background-color: #f20b41;
+    text-align: center;
+    color: white;
+    padding: 0.5%
+}
 table.PriceTable {
     width: 100%;
     background-color: #ffffff;

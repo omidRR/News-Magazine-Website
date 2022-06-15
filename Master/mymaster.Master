@@ -33,6 +33,7 @@
 
                 <div class="menu" id="menu" style="background-color: #2f2f32;">
                     <a href="../Pages/MainPage.Master.aspx" class="menu-item">صفحه اصلی</a>
+                    <a href="../Pages/Price.aspx" class="menu-item">نرخ ارز</a>
                     <a href="../Pages/Login.aspx"  class="menu-item">ورود به اکانت</a>
                     <a href="../Pages/Signup.aspx" class="menu-item">ثبت نام</a>
                     <a href="../Pages/AskQuestions.aspx" class="menu-item">شرایط استفاده</a>
