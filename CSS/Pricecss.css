@@ -1,0 +1,35 @@
+﻿* {
+    font-family: 'Vazirmatn-Regular';
+}
+
+body {
+    font-family: 'Vazirmatn-Regular';
+}
+
+@font-face {
+    font-family: 'Vazirmatn-Regular';
+    src: url('../Fonts/Vazirmatn-Regular.ttf') format('truetype');
+}
+table.PriceTable {
+    width: 100%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    padding: 10px;
+    border-width: 2px;
+    color: #000000;
+    transition: 1s;
+}
+.PriceTable th {
+    background-color: #f20b41;
+    color: snow;
+    transition: 0.5s;
+}
+.PriceTable:hover th {
+    background-color: #1a103d;
+    color: snow;
+}
+table.PriceTable td, table.PriceTable th {
+    border-width: 1px;
+    padding: 20px;
+    text-align: center;
+}
