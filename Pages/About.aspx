@@ -6,7 +6,7 @@
         <img class="imageSigninsettings2" src="../Images/ui-fixed.png" alt="Snow" style="width: 100%; height: 500px">
         <div id="itemmmm2">
             <div class="SigninItem2"style="font-size: 1rem;font-weight: normal">
-                <div><p style="font-size: 25px;margin: 0px"">درباره ما</p></div>
+                <div><p class="bi bi-info" style="font-size: 25px;margin: 0px"">درباره ما</p></div>
                 <div class="form-group2">
                  <p>وب سایت مجلات خبری در تابستان سال 1401 تأسیس شده است . مجلات خبری یک سازمان رسانه ای بزرگ بین المللی است که تلاش می کند اخبار و اطلاعات به صورت بی طرفانه در اختیار مخاطبان فارسی زبان خود در سرتاسر دنیا قرار دهد.</p>
                 </div>

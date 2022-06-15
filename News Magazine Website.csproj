@@ -74,6 +74,7 @@
     <Content Include="CSS\Style.css" />
     <Content Include="Images\ui-fixed.png" />
     <Content Include="Pages\About.aspx" />
+    <Content Include="Pages\AskQuestions.aspx" />
     <Content Include="Pages\contactus.aspx" />
     <Content Include="Pages\Login.aspx" />
     <Content Include="Pages\MainPage.Master.aspx" />
@@ -102,6 +103,13 @@
     </Compile>
     <Compile Include="Pages\About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AskQuestions.aspx.cs">
+      <DependentUpon>AskQuestions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AskQuestions.aspx.designer.cs">
+      <DependentUpon>AskQuestions.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\contactus.aspx.cs">
       <DependentUpon>contactus.aspx</DependentUpon>

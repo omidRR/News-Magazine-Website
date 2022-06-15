@@ -6,7 +6,7 @@
         <img class="imageSigninsettings2" src="../Images/ui-fixed.png" alt="Snow" style="width: 100%; height: 500px">
         <div id="itemmmm2">
             <div class="SigninItem2"style="font-size: 1rem;font-weight: normal">
-                <div><p style="font-size: 30px;margin: 0px"">تماس با ما</p></div>
+                <div><p class="bi bi-telephone" style="font-size: 30px;margin: 0px""> تماس با ما</p></div>
                 <div class="form-group2">
                
                     <a style="text-decoration: none" href="https://t.me/Sabzi_khoreshti"> <p class="bi bi-telegram"style="color: white; font-size: 16px"> پشتیبانی تلگرام</p>  </a>
