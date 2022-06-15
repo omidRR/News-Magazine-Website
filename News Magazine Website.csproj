@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CSS\About.css" />
+    <Content Include="CSS\bootstrap-icons.css" />
     <Content Include="CSS\Footer.css" />
     <Content Include="CSS\Signin.css" />
     <Content Include="CSS\Signup.css" />
@@ -73,6 +74,7 @@
     <Content Include="CSS\Style.css" />
     <Content Include="Images\ui-fixed.png" />
     <Content Include="Pages\About.aspx" />
+    <Content Include="Pages\contactus.aspx" />
     <Content Include="Pages\Login.aspx" />
     <Content Include="Pages\MainPage.Master.aspx" />
     <Content Include="Pages\Signup.aspx" />
@@ -100,6 +102,13 @@
     </Compile>
     <Compile Include="Pages\About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\contactus.aspx.cs">
+      <DependentUpon>contactus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\contactus.aspx.designer.cs">
+      <DependentUpon>contactus.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

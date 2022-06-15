@@ -25,7 +25,7 @@ namespace News_Magazine_Website.Pages
 
         protected void btnCreataccID2_ServerClick(object sender, EventArgs e)
         {
-            Response.Redirect("/Pages/Signup.aspx");
+            Response.Redirect("~/Pages/Signup.aspx");
         }
     }
 }

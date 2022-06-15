@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" href="../CSS/Signup.css" />
     <link rel="stylesheet" type="text/css" href="../CSS/Signin.css" />
     <link rel="stylesheet" type="text/css" href="../CSS/About.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/About.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <script src="../Scripts/sweetalert.min.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -33,7 +35,7 @@
                     <a href="../Pages/Login.aspx"  class="menu-item">ورود به اکانت</a>
                     <a href="../Pages/Signup.aspx" class="menu-item">ثبت نام</a>
                     <a href="#" class="menu-item">سوالات متداول</a>
-                    <a href="#" class="menu-item">تماس با ما</a>
+                    <a href="../Pages/contactus.aspx" class="menu-item">تماس با ما</a>
                     <a href="../Pages/About.aspx" class="menu-item">درباره ما</a>
                     <time class="timecl" style="color: white;"><%:DateTime.Now.ToString("f",new CultureInfo("fa-IR")) %></time>
                 </div>
