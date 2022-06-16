@@ -3,6 +3,15 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="contentnameprice">بازار داخلی ارز ها</div>
+    <% if (myDeserializedClass==null)
+       {
+           {%>
+
+            <p style="text-align: center">خطا در دریافت نرخ</p>
+
+    <% }
+                   return;
+               } %>
     <table class="PriceTable">
         <thead>
         <tr>
@@ -21,6 +30,7 @@
         </thead>
         <tbody>
         <tr>
+            
             <td>نرخ ارز</td>
             <td><%: myDeserializedClass.data.prices.USD.current %></td>
             <td><%: myDeserializedClass.data.prices.EUR.current %></td>

@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using RestSharp;
+using System;
 
 namespace News_Magazine_Website.Pages
 {
@@ -16,20 +10,17 @@ namespace News_Magazine_Website.Pages
 
 
         protected void Page_Load(object sender, EventArgs e)
-        {  RestClient client23 = new RestClient();
+        {
+
+            RestClient client23 = new RestClient();
             client23.UserAgent =
                 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36";
             RestRequest request = new RestRequest(Method.GET);
-            request.Timeout = 10000;
+            request.Timeout = 15000;
             client23 = new RestClient("http://shamimsoft.ir/mahdi/arz/arz.txt");
             IRestResponse response = client23.Execute(request);
-            response.Content=response.Content.Replace("+", "🔺").Replace("-", "🔻");
+            response.Content = response.Content.Replace("+", "🔺").Replace("-", "🔻");
             myDeserializedClass = JsonConvert.DeserializeObject<prices.Root>(response.Content);
-            if (response.StatusCode != HttpStatusCode.OK)
-            {
-                Response.Write("خطا در دریافت نرخ");
-                return;
-            }
             //Response.Write(myDeserializedClass.data.prices.USD.current);
 
 
