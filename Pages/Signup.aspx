@@ -7,18 +7,21 @@
         <img class="imagesignupsettings" src="../Images/ui-fixed.png" alt="Snow" style="width: 100%; height: 500px">
         <div id="itemmmm">
             <div class="SignUpItem">
-
+                
                 <div class="form-group">
-                    <input type="text" class="Signup-Control" runat="server" id="nameID" placeholder="نام کاربری">
+                    <input type="text" class="Signup-Control" runat="server" id="NameID" placeholder="نام و نام خانوادگی"/>
                 </div>
                 <div class="form-group">
-                    <input type="email" class="Signup-Control" runat="server" id="emailID" placeholder="ایمیل">
+                    <input type="number" class="Signup-Control" runat="server" id="CodemeliID" placeholder="نام کاربری (کدملی)"/>
                 </div>
                 <div class="form-group">
-                    <input type="password" class="Signup-Control" runat="server" id="passwordID" placeholder="پسورد">
+                    <input type="email" class="Signup-Control" runat="server" id="emailID" placeholder="ایمیل"/>
                 </div>
                 <div class="form-group">
-                    <input type="password" class="Signup-Control" runat="server" id="confirm_passwordID" placeholder="تکرار مجدد پسورد">
+                    <input type="password" class="Signup-Control" runat="server" id="passwordID" placeholder="پسورد"/>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="Signup-Control" runat="server" id="confirm_passwordID" placeholder="تکرار مجدد پسورد"/>
                 </div>
                 <div class="formbtncreataccount">
                     <button  class="btn-CreateAccount" id="btnCreataccID" runat="server" onserverclick="btnCreataccID_OnServerClick">ایجاد حساب کاربری</button>

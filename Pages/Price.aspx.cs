@@ -16,7 +16,7 @@ namespace News_Magazine_Website.Pages
             client23.UserAgent =
                 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36";
             RestRequest request = new RestRequest(Method.GET);
-            request.Timeout = 15000;
+            request.Timeout = 25000;
             client23 = new RestClient("http://shamimsoft.ir/mahdi/arz/arz.txt");
             IRestResponse response = client23.Execute(request);
             response.Content = response.Content.Replace("+", "🔺").Replace("-", "🔻");
