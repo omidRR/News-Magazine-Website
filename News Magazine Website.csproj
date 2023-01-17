@@ -118,6 +118,7 @@
     <Content Include="Pages\MainPage.Master.aspx" />
     <Content Include="Pages\Price.aspx" />
     <Content Include="Pages\Signup.aspx" />
+    <Content Include="Pages\Panel.aspx" />
     <Content Include="Scripts\sweetalert.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -184,6 +185,13 @@
     </Compile>
     <Compile Include="Pages\Signup.aspx.designer.cs">
       <DependentUpon>Signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Panel.aspx.cs">
+      <DependentUpon>Panel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Panel.aspx.designer.cs">
+      <DependentUpon>Panel.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

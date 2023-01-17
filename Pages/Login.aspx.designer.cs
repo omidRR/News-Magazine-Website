@@ -15,13 +15,13 @@ namespace News_Magazine_Website.Pages
     {
 
         /// <summary>
-        /// nameID control.
+        /// codemeliID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText nameID;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl codemeliID;
 
         /// <summary>
         /// passwordID control.

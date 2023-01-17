@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Csv;
+using System;
+using System.IO;
 
 namespace News_Magazine_Website.Pages
 {
@@ -11,11 +13,42 @@ namespace News_Magazine_Website.Pages
 
         protected void LoginID2_ServerClick(object sender, EventArgs e)
         {
-            if (nameID.Value == "" || passwordID.Value == "")
+            if (codemeliID.Value == "" || passwordID.Value == "")
             {
                 ClientScript.RegisterClientScriptBlock(this.GetType(), "alert",
                     "swal('Error!', 'تمام مقادیر را تکمیل کنید!', 'error')", true);
+                return;
             }
+
+            //readcsv
+            var Dir = AppContext.BaseDirectory;
+            string csvv = default;
+            try
+            {
+                csvv = File.ReadAllText(Dir + @"/Users.csv");
+            }
+            catch (System.IO.FileNotFoundException exception)
+            {
+                File.WriteAllText(Dir + @"/Users.csv", "");
+                csvv = File.ReadAllText(Dir + @"/Users.csv");
+            }
+
+            foreach (var line in CsvReader.ReadFromText(csvv))
+            {
+                var codemeli = line[0];
+                var pass = line[4];
+                if (codemeliID.Value == codemeli && passwordID.Value == pass)
+                {
+                    Response.Redirect("Panel.aspx");
+                }
+                else
+                {
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "alert",
+                        "swal('Error!', 'نام کاربری یا رمز عبور اشتباه میباشد!', 'error')", true);
+                    return;
+                }
+            }
+
         }
 
         protected void btnCreataccID2_ServerClick(object sender, EventArgs e)
