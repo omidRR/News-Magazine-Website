@@ -1,5 +1,6 @@
 ﻿using Csv;
 using System;
+using System.Globalization;
 using System.IO;
 
 namespace News_Magazine_Website.Pages
@@ -26,7 +27,7 @@ namespace News_Magazine_Website.Pages
                 var columnNames = new[] { "nationalCode ", "Name", "Email", "DateTime", "password" };
                 var rows = new[]
                 {
-                new[] { CodemeliID.Value, NameID.Value, emailID.Value, DateTime.Now.ToString("g"), passwordID.Value }
+                new[] { CodemeliID.Value, NameID.Value, emailID.Value, DateTime.Now.ToString("d", new CultureInfo("fa-IR")), passwordID.Value }
             };
                 //callcodemeli
                 var res = Codemeli(CodemeliID.Value);
@@ -83,7 +84,7 @@ namespace News_Magazine_Website.Pages
 
         protected void btnLoginAccountID_ServerClick(object sender, EventArgs e)
         {
-            Response.Redirect("/Pages/Login.aspx");
+            Response.Redirect("~/Pages/Login.aspx");
         }
 
         public string Codemeli(string textbox1)

@@ -9,7 +9,7 @@
             <div class="SigninItem2">
 
                 <div class="form-group2">
-                    <input type="number" class="Signin-Control2" runat="server" id="codemeliID" placeholder="نام کاربری">
+                    <input type="number" class="Signin-Control2" runat="server" id="codemeliID" maxlength="10" placeholder="نام کاربری">
                 </div>
                 <div class="form-group">
                     <input type="password" class="Signin-Control2" runat="server" id="passwordID" placeholder="پسورد">

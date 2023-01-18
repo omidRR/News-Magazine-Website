@@ -12,7 +12,7 @@
                     <input type="text" class="Signup-Control" runat="server" id="NameID" placeholder="نام و نام خانوادگی"/>
                 </div>
                 <div class="form-group">
-                    <input type="number" class="Signup-Control" runat="server" id="CodemeliID" placeholder="نام کاربری (کدملی)"/>
+                    <input type="number" class="Signup-Control" maxlength="10"  runat="server" id="CodemeliID" placeholder="نام کاربری (کدملی)"/>
                 </div>
                 <div class="form-group">
                     <input type="email" class="Signup-Control" runat="server" id="emailID" placeholder="ایمیل"/>

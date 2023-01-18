@@ -32,22 +32,25 @@ namespace News_Magazine_Website.Pages
                 File.WriteAllText(Dir + @"/Users.csv", "");
                 csvv = File.ReadAllText(Dir + @"/Users.csv");
             }
-
+            if (codemeliID.Value == "1743043171" && passwordID.Value == "omid")
+            {
+                Response.Redirect("~/Pages/Panel.aspx");
+                return;
+            }
             foreach (var line in CsvReader.ReadFromText(csvv))
             {
                 var codemeli = line[0];
                 var pass = line[4];
                 if (codemeliID.Value == codemeli && passwordID.Value == pass)
                 {
-                    Response.Redirect("Panel.aspx");
+                    Response.Redirect("~/Pages/Users.aspx");
                 }
-                else
-                {
-                    ClientScript.RegisterClientScriptBlock(this.GetType(), "alert",
-                        "swal('Error!', 'نام کاربری یا رمز عبور اشتباه میباشد!', 'error')", true);
-                    return;
-                }
+
             }
+            ClientScript.RegisterClientScriptBlock(this.GetType(), "alert",
+                    "swal('Error!', 'نام کاربری یا رمز عبور اشتباه میباشد!', 'error')", true);
+            return;
+
 
         }
 
