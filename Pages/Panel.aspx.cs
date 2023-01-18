@@ -42,7 +42,6 @@ namespace News_Magazine_Website.Pages
                     string[] t = str[i].Split(',');
                     t[3] = t[3].Replace("/", "");
                     dt.Rows.Add(t);
-
                 }
                 GridView1.DataSource = dt;
                 //show
